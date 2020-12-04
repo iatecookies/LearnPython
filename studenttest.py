@@ -10,7 +10,7 @@ studenttests = file1.read().splitlines()
 studentpassedtests = file2.read().splitlines()
 
 list2 = []
-for (i, j) in zip( studenttests, studentpassedtests) :
+for (i, j) in zip( studenttests, studentpassedtests):
     studenttests = i.split(":")
     studentpassedtests = j.split(":")
 
