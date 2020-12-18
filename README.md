@@ -3,7 +3,7 @@
 
 ## Short description
 A 2D survival game. You start as a small fish, swimming about in an infinitely big world. You score points by eating fish. Be careful though, because other fish can also eat/damage you.
-It's an educational game in which you learn what different kinds if fish exist, what they eat and what their natural enemies are. The game also raises awareness of environmental issues such as the pollution of oceans due to plastic waste.
+It's an educational game in which you learn what different kinds of fish exist, what they eat and what their natural enemies are. The game also raises awareness of environmental issues such as the pollution of oceans due to plastic waste.
 
 
 ## Game Features
@@ -31,6 +31,10 @@ It's an educational game in which you learn what different kinds if fish exist, 
 - World design
 - Educative elements
 - Fishes can eat each other
+- Game settings adjuster for the player
+- Cutscenes
+- Special NPC like a mermaid or spooky ghost
+- Missions/Quests to explore or fight the plastic pollution
 
 
 ## Dependencies
@@ -70,13 +74,23 @@ python3 main.py
 
 ## Unit testing
 
-There are two different methods you can unit test on eiher operating systems.
+There are two different methods you can unit test depending on what operating
+system you are using.
 
-# Windows 10
+### Windows 10
 
-# Ubuntu 20.04 LTS
+```
+coverage run --omit test_*.py -m pytest;
 
+coverage report -m
+```
 
+### Ubuntu 20.04 LTS
+In Linux, you can use *Makefile* to test. Make is used to compile a program
+from source code
+```
+command: make
+```
 
 ## Game controls
 - **W, A, S, D** keys are for moving up, left, down, right
