@@ -31,6 +31,8 @@ It's an educational game in which you learn what different kinds of fish exist, 
 - World design
 - Educative elements
 - Fishes can eat each other
+- Fisherboats are fishing using nets or fishing rods
+- Plastic kills fishes
 - Game settings adjuster for the player
 - Cutscenes
 - Special NPC like a mermaid or spooky ghost
@@ -75,7 +77,8 @@ python3 main.py
 ## Unit testing
 
 There are two different methods you can unit test depending on what operating
-system you are using.
+system you are using. Each system has the following commands you need to use to
+test *vector*, *limit* and *math* classes.
 
 ### Windows 10
 
@@ -86,8 +89,8 @@ coverage report -m
 ```
 
 ### Ubuntu 20.04 LTS
-In Linux, you can use *Makefile* to test. Make is used to compile a program
-from source code
+On a Linux system, you can use *Makefile* to test. Makefile is used to compile
+ a program from source code.
 ```
 command: make
 ```
